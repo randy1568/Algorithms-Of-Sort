@@ -19,10 +19,11 @@ public class HeapSort {
             HeapAdjust(nums, i, nums.length);
         }
         for (int j = nums.length - 1; j > 0; j--) {
+            //交换堆顶和数组末尾的元素
             swap(nums,0,j);
+            //再次构造大根堆
             HeapAdjust(nums,0,j);
         }
-
     }
 
     private static void swap(int[] nums, int i, int j) {
@@ -31,6 +32,7 @@ public class HeapSort {
         nums[j] = temp;
     }
 
+    //构造大根堆
     private static void HeapAdjust(int[] nums, int i, int arrayLength) {
         int temp = nums[i];
 
