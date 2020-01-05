@@ -11,6 +11,7 @@ public class BucketSort {
 
         double max = nums[0];
         double min = nums[0];
+        //这里设置桶的数量等于数组的长度
         List<LinkedList<Double>> bucket = new ArrayList<>(nums.length);
         for (double temp:nums){
             if(temp > max){
@@ -29,6 +30,7 @@ public class BucketSort {
         }
         int k = 0;
         for (LinkedList<Double> temp:bucket){
+            //对每个桶进行单独的排序
             Collections.sort(temp);
             for (Double temp2:temp){
                 nums[k++] = temp2;
