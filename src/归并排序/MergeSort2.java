@@ -3,7 +3,7 @@ package 归并排序;
 import java.util.Arrays;
 
 /**
- * 自下而上
+ * 自下而上(非递归实现)
  */
 public class MergeSort2 {
 

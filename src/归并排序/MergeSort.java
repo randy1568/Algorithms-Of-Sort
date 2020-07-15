@@ -3,7 +3,7 @@ package 归并排序;
 import java.util.Arrays;
 
 /**
- * 自上而下
+ * 自上而下（递归实现）
  */
 public class MergeSort {
 
@@ -48,5 +48,4 @@ public class MergeSort {
             nums[left+w] = temp[w];
         }
     }
-
 }
